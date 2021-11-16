@@ -1,9 +1,10 @@
-import 'package:clean_architecture_and_tdd/core/error/failure.dart';
-import 'package:clean_architecture_and_tdd/core/usecases/usecase.dart';
-import 'package:clean_architecture_and_tdd/features/number_trivia/domain/entities/number_trivia.dart';
-import 'package:clean_architecture_and_tdd/features/number_trivia/domain/repositories/number_trivia_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:equatable/equatable.dart';
+
+import '../../../../core/error/failure.dart';
+import '../../../../core/usecases/usecase.dart';
+import '../entities/number_trivia.dart';
+import '../repositories/number_trivia_repository.dart';
 
 class GetConcreteNumberTrivia implements Usecase<NumberTrivia, Params> {
   final NumberTriviaRepository repository;
